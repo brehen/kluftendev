@@ -1,7 +1,7 @@
-import Typography from 'typography';
+import Typography from 'typography'
 
 const typography = new Typography({
-  //baseFontSize: 'calc(1em + 1vw)',
+  // baseFontSize: 'calc(1em + 1vw)',
   baseLineHeight: 1.666,
   headerFontFamily: ['Play', 'Segoe UI', 'Helvetica', 'Arial', 'sans-serif'],
   googleFonts: [
@@ -15,6 +15,6 @@ const typography = new Typography({
     }
   ],
   bodyFontFamily: ['Overpass', 'Georgia', 'serif']
-});
+})
 
-export default typography;
+export default typography

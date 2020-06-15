@@ -1,10 +1,10 @@
-import React from 'react';
-import HeroSection from './Hero/HeroSection';
-import AboutMeSection from './About Me/AboutMeSection';
-import Experience from './Experience/Experience';
-import SkillsSection from './Skills/SkillsSection';
+import React from 'react'
+import HeroSection from './Hero/HeroSection'
+import AboutMeSection from './About Me/AboutMeSection'
+import Experience from './Experience/Experience'
+import SkillsSection from './Skills/SkillsSection'
 
-import '../css/style.css';
+import '../css/style.css'
 
 const Layout = () => {
   return (
@@ -14,7 +14,7 @@ const Layout = () => {
       <SkillsSection />
       <Experience />
     </>
-  );
-};
+  )
+}
 
-export default Layout;
+export default Layout
