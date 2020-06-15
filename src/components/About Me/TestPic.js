@@ -1,6 +1,6 @@
-import React from 'react';
-import { graphql } from 'gatsby';
-import Img from 'gatsby-image';
+import React from 'react'
+import { graphql } from 'gatsby'
+import Img from 'gatsby-image'
 
 export default ({ data }) => (
   <div>
@@ -8,7 +8,7 @@ export default ({ data }) => (
     <h1>Hello gatsby-image</h1>
     <Img fixed={data.file.childImageSharp.fixed} />
   </div>
-);
+)
 
 export const query = graphql`
   query {
@@ -22,4 +22,4 @@ export const query = graphql`
       }
     }
   }
-`;
+`

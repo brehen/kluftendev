@@ -10,7 +10,6 @@ module.exports = {
     colors: {
       brand: '#1C639A',
       branddark: '#364762',
-      // accent: '#C4371D',
       accent: 'rgb(239, 89, 30)',
       white: '#fff',
       fifty: 'rgb(0,0,0,0.7)',

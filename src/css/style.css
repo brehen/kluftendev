@@ -21,6 +21,7 @@
 
 .text-xxs {
   font-size: 0.55rem;
+  text-align: justify;
 }
 
 .text-gray > span {

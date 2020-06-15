@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 const Icon = props => {
   return (
@@ -10,7 +10,7 @@ const Icon = props => {
     >
       {props.children}
     </div>
-  );
-};
+  )
+}
 
-export default Icon;
+export default Icon

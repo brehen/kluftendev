@@ -1,30 +1,29 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react'
 
-function getPositions() {
-  const aboutMe = document.querySelector('#aboutMe').getBoundingClientRect()
-    .top;
-  const skills = document.querySelector('#skills').getBoundingClientRect().top;
+function getPositions () {
+  const aboutMe = document.querySelector('#aboutMe').getBoundingClientRect().top
+  const skills = document.querySelector('#skills').getBoundingClientRect().top
   const education = document
     .queryCommandEnabled('#education')
-    .getBoundingClientRect().top;
+    .getBoundingClientRect().top
   const experience = document
     .queryCommandEnabled('#experience')
-    .getBoundingClientRect().top;
+    .getBoundingClientRect().top
 
   return {
     aboutMe,
     skills,
     education,
     experience
-  };
+  }
 }
 
-export default function usePositions() {
-  const [positions, setPositions] = useState(getPositions());
+export default function usePositions () {
+  const [positions, setPositions] = useState(getPositions())
 
   useEffect(() => {
-    setPositions(getPositions());
-  }, []);
+    setPositions(getPositions())
+  }, [])
 
-  return positions;
+  return positions
 }

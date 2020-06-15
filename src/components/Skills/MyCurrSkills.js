@@ -2,12 +2,12 @@ export default () => {
   return {
     proficiencies: [
       {
-        heading: 'Web Technologies & Frameworks',
-        subHeading: 'React, Gatsby, Tailwind CSS, AngularJS'
+        heading: 'Frameworks',
+        subHeading: 'React, Gatsby, Svelte, AngularJS'
       },
       {
         heading: 'Programming languages',
-        subHeading: 'JavaScript, Java'
+        subHeading: 'ES6+ JavaScript'
       },
       {
         heading: 'Design Tools',
@@ -20,12 +20,12 @@ export default () => {
 
       {
         heading: 'Web Services',
-        subHeading: 'GraphQL, REST, SOAP'
+        subHeading: 'GraphQL, REST'
       },
       {
         heading: 'Versioning',
-        subHeading: 'Git, ServiceNow Update Sets'
+        subHeading: 'Git'
       }
     ]
-  };
-};
+  }
+}
