@@ -1,0 +1,174 @@
+/**
+ * This injects Tailwind's base styles, which is a combination of
+ * Normalize.css and some additional base styles.
+ *
+ * You can see the styles here:
+ * https://github.com/tailwindcss/tailwindcss/blob/master/css/base.css
+ *
+ * If using `postcss-import`, use this import instead:
+ *
+ * @import "tailwindcss/base";
+ */
+@tailwind base;
+
+.bg-section {
+  background-image: linear-gradient(180deg, #1f222e 0%, #2c4c7f 37%);
+}
+
+.text-gray {
+  color: #a8a8a8;
+}
+
+.text-xxs {
+  font-size: 0.55rem;
+}
+
+.text-gray > span {
+  color: #fff;
+}
+
+.flex-flow-wrap {
+  flex-flow: wrap;
+}
+
+.fancy-button {
+  display: inline-block;
+  position: relative;
+  padding: 20px 38px;
+  top: 0;
+  margin-bottom: calc(1.666rem / 2);
+
+  border-radius: 4px;
+  border-bottom: 1px solid rgba(28, 227, 125, 0.5);
+
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  transition: all 0.1s ease;
+}
+
+.fancy-button:hover {
+  top: -3px;
+}
+
+.fancy-button:active {
+  top: 3px;
+  box-shadow: 0px 0px 0px rgba(15, 165, 60, 0);
+}
+
+.about-me-card {
+  /*min-height: 700px;*/
+}
+
+html {
+  font-size: calc(1em + 1vw);
+}
+
+body {
+  overflow: auto;
+}
+
+.hero-header {
+  margin-bottom: 100px;
+}
+
+.active-section {
+  background-color: #1f222e !important;
+  color: rgb(252, 125, 75);
+}
+
+.nav-section:hover {
+  filter: brightness(0.9);
+}
+
+.floating {
+  animation: pulse 1s infinite alternate;
+  position: relative;
+  bottom: 16px;
+}
+
+@keyframes pulse {
+  0% {
+    bottom: 16px;
+  }
+  100% {
+    bottom: 40px;
+  }
+}
+
+/**
+ * This injects any component classes registered by plugins.
+ *
+ * If using `postcss-import`, use this import instead:
+ *
+ * @import "tailwindcss/components";
+ */
+@tailwind components;
+
+/**
+ * Here you would add any of your custom component classes; stuff that you'd
+ * want loaded *before* the utilities so that the utilities could still
+ * override them.
+ *
+ * Example:
+ *
+ * .btn { ... }
+ * .form-input { ... }
+ *
+ * Or if using a preprocessor or `postcss-import`:
+ *
+ * @import "components/buttons";
+ * @import "components/forms";
+ */
+
+/**
+ * This injects all of Tailwind's utility classes, generated based on your
+ * config file.
+ *
+ * If using `postcss-import`, use this import instead:
+ *
+ * @import "tailwindcss/utilities";
+ */
+@tailwind utilities;
+
+/**
+ * Here you would add any custom utilities you need that don't come out of the
+ * box with Tailwind.
+ *
+ * Example :
+ *
+ * .bg-pattern-graph-paper { ... }
+ * .skew-45 { ... }
+ *
+ * Or if using a preprocessor or `postcss-import`:
+ *
+ * @import "utilities/background-patterns";
+ * @import "utilities/skew-transforms";
+ */
+
+.fixed-menu {
+  position: fixed;
+  top: 60px;
+}
+
+[data-aos='new-animation'] {
+  opacity: 0;
+  transition-property: transform, opacity;
+
+  &.aos-animate {
+    opacity: 1;
+  }
+
+  @media screen and (min-width: 768px) {
+    transform: translateX(100px);
+
+    &.aos-animate {
+      transform: translateX(0);
+    }
+  }
+}
