@@ -39,7 +39,7 @@ const PersonalExpContent = () => {
                 <GiJetFighter />
               </Icon>
             </IconGroup>
-            <IconGroup className='' text='Clean & write JS'>
+            <IconGroup className='' text='Write clean JS'>
               <Icon className='text-md  select-none'>
                 <MdCode />
               </Icon>
@@ -78,9 +78,26 @@ const DCExpContent = () => {
             href='https://www.soprasteria.no/'
             alt='Link to my current employer'
           >
+            ITverket
+          </a>
+          <span className='text-xs text-accent'>Feb 2020 - Current</span>
+        </h2>
+        <p className='text-xxs'>
+          After a couple of years developing web applications on ServiceNow, I decided
+          to follow my passion for more modern web development and got the opportunity
+          to do this at ITverket. I'm currently hired out as a react consultant, helping 
+          our customers develop amazing front-end applications.
+        </p>
+      </div>
+      <div>
+        <h2 className='text-sm text-left my-4 flex justify-between items-end'>
+          <a
+            href='https://www.soprasteria.no/'
+            alt='Link to my current employer'
+          >
             Sopra Steria
           </a>
-          <span className='text-xs text-accent'>Dec 2017 - Current</span>
+          <span className='text-xs text-accent'>Dec 2017 - Jan 2020</span>
         </h2>
         <p className='text-xxs'>
           I started working for Sopra Steria after I decided to focus on a

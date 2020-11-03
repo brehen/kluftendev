@@ -27,11 +27,11 @@ const AboutMe = () => (
               project launched my carreer as a ServiceNow consultant.
               <br />
               <br />
-              The first two years after finishing my degree was spent on ServiceNow,
+              The couple of years after finishing my degree was spent on ServiceNow,
               mainly developing in the front facing Service Portal where I specialized my
               efforts into creating new and amazing custom experiences for our customers.
-              With a tech stack stuck in 2014, I decided to move on from ServiceNow and start
-              developing with React instead.
+              With the front-end framework being locked to AngularJS, I decided to move
+              on from ServiceNow to developing web applications with more in-demand frameworks.  
             </p>
           </div>
           <div className='md:ml-6 mb-2'>

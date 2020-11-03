@@ -26,11 +26,11 @@ const MenuBar = () => {
 
   const getPositions = () => {
     const aboutMePos =
-      document.querySelector('#aboutMe').getBoundingClientRect().top - 200
+      document.querySelector('#aboutMe').getBoundingClientRect().top
     const skillsPos =
-      document.querySelector('#skills').getBoundingClientRect().top - 200
+      document.querySelector('#skills').getBoundingClientRect().top
     const expPos =
-      document.querySelector('#experience').getBoundingClientRect().top - 200
+      document.querySelector('#experience').getBoundingClientRect().top
     return { aboutMePos, skillsPos, expPos }
   }
 
@@ -69,14 +69,14 @@ const MenuBar = () => {
       <div
         className='text-gray-700 text-center bg-cardbackground px-4 py-2 cursor-pointer nav-section select-none'
         id='skillsNav'
-        onClick={() => moveMe(positionRef.current.skillsPos)}
+        onClick={() => moveMe(positionRef.current.skillsPos + 2)}
       >
         Skills
       </div>
       <div
         className='text-gray-700 text-center bg-cardbackground px-4 py-2 cursor-pointer nav-section select-none'
         id='experienceNav'
-        onClick={() => moveMe(positionRef.current.expPos)}
+        onClick={() => moveMe(positionRef.current.expPos + 2)}
       >
         Experience
       </div>

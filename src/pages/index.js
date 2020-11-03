@@ -1,36 +1,26 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import HeroSection from '../components/Hero/HeroSection'
 import 'aos/dist/aos.css'
+import AOS from 'aos'
 import MenuBar from '../components/MenuBar'
-import lifecycle from 'react-pure-lifecycle'
 
-const componentDidMount = props => {
-  const isBrows = typeof window !== 'undefined'
-  const AOS = isBrows ? require('AOS') : undefined
-  AOS.init()
-}
 
-// make them properties on a standard object
-const methods = {
-  componentDidMount
-}
-
-function IndexPage () {
+const IndexPage = () => {
+  useEffect(() => {
+    if(typeof window !== 'undefined') AOS.init()
+  }, [])
   return (
     <>
       <MenuBar />
-      <Layout>
-        <SEO
+      <SEO
           title='Home'
           keywords={['gatsby', 'tailwind', 'react', 'tailwindcss']}
         />
-        <HeroSection />
-      </Layout>
+      <Layout/>
     </>
   )
 }
 
-export default lifecycle(methods)(IndexPage)
+export default IndexPage
