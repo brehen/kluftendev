@@ -162,8 +162,8 @@ export const Education = () => {
       <div>
         <h2 className="text-sm text-left my-4 flex justify-between items-end align-end">
           <a
-            href="https://www.oslomet.no/"
-            alt="Link to the university in question"
+            href="https://www.oslomet.no/studier/tkd/dataingenior"
+            alt="Link to the study program"
           >
             Bachelor, Software Engineering
           </a>
@@ -175,9 +175,7 @@ export const Education = () => {
           </span>
         </h2>
         <p className="text-xxs">
-          A study which provides a comprehensive and vocational education in
-          information technology directed specifically at programming, software,
-          system and application development.
+          Oslo and Akershus University College of Applied Sciences
         </p>
       </div>
     </div>
@@ -195,7 +193,7 @@ const Experience = () => {
         id="experience"
       >
         <Education />
-        <hr className="mb-8 mt-4 h-px w-1/2" />
+        <hr className="mb-6 mt-4 h-px w-1/2" />
         <DCExpContent />
       </div>
       <div>
